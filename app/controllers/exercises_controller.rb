@@ -14,7 +14,7 @@ class ExercisesController < ApplicationController
       # or redirect_to [current_user,@exercise]
     else
       flash[:alert]="Exercise hasn't been created"
-      render new
+      render :new
     end
   end
   
